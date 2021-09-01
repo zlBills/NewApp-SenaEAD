@@ -23,19 +23,19 @@ export default class MyList extends Component {
         newData.push({
             title: "Lorem ipsum",
             text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in congue risus, non viverra tellus. Nam faucibus ligula non metus ultrices mollis. Cras dolor purus, hendrerit eu eros quis, dignissim eleifend mi. In tincidunt mi in diam egestas congue ac ut purus. Nulla semper libero vitae blandit vehicula.",
-            image: require('../images/img1.png'),
+            image: require('../images/img1.jpg'),
             id: this.state.data.length,
         });
         newData.push({
             title: "Curabitur vulputate",
             text: "Curabitur vulputate enim in lacus imperdiet, a convallis odio posuere. Nulla id ex et purus sodales rutrum non eu eros. Ut consequat est lacus.",
-            image: require('../images/img2.png'),
+            image: require('../images/img2.jpg'),
             id: this.state.data.length + 1,
         });
         newData.push({
             title: "Proin hendrerit",
             text: "Proin hendrerit nisl id turpis bibendum, sit amet scelerisque augue elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a blandit sapien.",
-            image: require('../images/img3.png'),
+            image: require('../images/img3.jpg'),
             id: this.state.data.length + 2,
         });
         this.setState({
