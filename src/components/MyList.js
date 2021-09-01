@@ -3,7 +3,8 @@
 /* eslint-disable quotes */
 /* eslint-disable prettier/prettier */
 import React, { Component } from 'react';
-import { Text, View, ScrollView, TouchableOpacity, Image } from 'react-native';
+import { Text, View, ScrollView, TouchableOpacity} from 'react-native';
+import FastImage from 'react-native-fast-image';
 
 export default class MyList extends Component {
     state = {
@@ -57,7 +58,7 @@ export default class MyList extends Component {
             return (
                 <TouchableOpacity key={u.id}>
                     <View style={{ padding: 10 }} key={u.id}>
-                        <Image style={{ width: 100, height: 100 }} source={u.image}/>
+                        <FastImage style={{ width: 100, height: 100 }} source={u.image} resizeMode={FastImage.resizeMode.contain}/>
                         <Text style={{ fontSize: 15 }}>{u.title}</Text>
                         <Text>{u.text}</Text>
                     </View>
