@@ -69,11 +69,7 @@ export default class MyList extends Component {
 
     render() {
         return (
-            <ScrollView onScroll={({ nativeEvent }) => {
-                if (this.isCloseToBottom(nativeEvent) && this.state.hasMore) {
-                    this.getListOfData();
-                }
-            }}>
+            <ScrollView>
                 {this.renderList()}
             </ScrollView>
         );
